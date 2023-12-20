@@ -11,7 +11,6 @@ def search_and_save(query):
             output_file.write(f'HTML:\n{response.text}\n\n')
             output_file.write(f'JavaScript:\n{response.text}\n\n')
             output_file.write(f'{response.text}\n\n')
-            output_file.write(f'{response.text}\n\n')
 
 def post_and_save(query):
     with open('output2.txt', 'w') as output_file:
@@ -20,7 +19,6 @@ def post_and_save(query):
             output_file.write(f'Website: {website}\n\n')
             output_file.write(f'HTML:\n{response.text}\n\n')
             output_file.write(f'JavaScript:\n{response.text}\n\n')
-            output_file.write(f'{response.text}\n\n')
             output_file.write(f'{response.text}\n\n')
 
 search_and_save('*')
