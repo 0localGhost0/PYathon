@@ -39,7 +39,8 @@ def scrape_website(url, level, log_file, file_ext_log, backup_log):
         for link in links:
             next_url = link['href']
             if next_url.startswith('http'):
-                # SHIT YOUR LOOKING FORRRRRRR
+              # here is where to specify file extensions 
+              # SHIT YOUR LOOKING FORRRRRRR
                 if next_url.split('.')[-1] in ['html', 'htm', 'css', 'js', 'txt', 'xml', 'xss', 'doc', 'py', 'exe', 'apk', 'pdf', 'pwd', 'jpg', 'png', 'gif', 'gz', 'zip', 'iso', 'jpeg', 'torrent', 'sh', 'zsh', 'bin', 'list', 'rc', 'conf', 'git', 'file', 'flv', 'mp4', 'mp3', 'mpeg', 'mpg', 'deb', 'mov', 'flv', 'wav', 'ogv', 'log', 'info', '7gz', 'go', 'CMD', 'cmd', 'com', 'org', 'us', 'rs', 'mx', 'gov', 'psd', 'x', 'bmg', 'ini', 'pcap', 'pcapng', 'md', 'img']:
                     file_ext_log.write(next_url + '\n')
                 # RECURSE TO HELLLLLLL
