@@ -47,7 +47,8 @@ def scrape_website(url, level, log_file, file_ext_log, backup_log):
                 scrape_website(next_url, level-1, log_file, file_ext_log, backup_log)
 
         # BULK RAW CODE BACKUPPPPPPPP
-        backup_log.write(response.content.decode('utf-8') + '\n')
+        # Added raw response data. comes in handy for pesky hidden files 
+backup_log.write(response.content.decode('utf-8') + '\n')
 
 # LOGZZZZZ
 log_file = open('url_log1.txt', 'w')
